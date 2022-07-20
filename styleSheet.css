@@ -1,0 +1,45 @@
+*{margin:0; padding:0;box-sizing: border-box;}
+
+
+.nav-item > a{
+
+text-decoration: none;
+color:white;
+ 
+}
+.navbar-toggler:hover{
+
+    background-color: white;
+
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background-color: black;
+ }
+
+ .fa-bell{
+    transform: rotate(-0.9turn);
+ }
+
+.nav-item{
+
+font-weight:bold;
+
+ }
+ .footerdiv li{
+    list-style-type: none;
+    margin-left:25%;
+    color:white
+ }
+ .servlink li{
+    list-style-type: none;
+    color:white;
+    padding: 5px;
+ }
+ .servlink li a{
+  text-decoration: none;
+    color:white;
+ }
