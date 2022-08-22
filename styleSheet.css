@@ -1,45 +1,84 @@
-*{margin:0; padding:0;box-sizing: border-box;}
+/* (A) POPUP */
+.picker-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+  
+}
+.picker-wrap.show {
+  opacity: 1;
+  visibility: visible;
+}
+.picker-wrap .picker {
+  margin: 50vh auto 0 auto;
+  transform: translateY(-50%);
+}
 
-
-.nav-item > a{
-
-text-decoration: none;
-color:white;
+/* (B) CONTAINER */
+.picker {
+  max-width: 500px;
+  height: 400px;
+  border: 1px solid #eee;
+  background: #fafafa;
  
 }
-.navbar-toggler:hover{
 
-    background-color: white;
-
+/* (C) MONTH + YEAR */
+.picker-m, .picker-y {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-.carousel .carousel-indicators button {
-    width: 10px;
-   height: 10px;
-   border-radius: 100%;
-   background-color: black;
- }
-
- .fa-bell{
-    transform: rotate(-0.9turn);
- }
-
-.nav-item{
-
-font-weight:bold;
-
- }
- .footerdiv li{
-    list-style-type: none;
-    margin-left:25%;
-    color:white
- }
- .servlink li{
-    list-style-type: none;
-    color:white;
-    padding: 5px;
- }
- .servlink li a{
-  text-decoration: none;
-    color:white;
- }
+/* (D) DAY */
+.picker-d table {
+  color: #333;
+  border-collapse: separate;
+  width: 100%;
+  margin-top: 20px;
+}
+.picker-d table td {
+  width: 14.28%; /* 7 EQUAL COLUMNS */
+  padding: 10px;
+  text-align: center;
+}
+/* HEADER */
+.picker-d-h td {
+  font-weight: bold;
+}
+/* BLANK DATES */
+.picker-d-b {
+  background: #ddd;
+}
+/* TODAY */
+.picker-d-td {
+  background: #ffe0d4;
+}
+/* PICKABLE DATES */
+.picker-d-d:hover {
+  cursor: pointer;
+  background: #2d68c4;
+  color: #fff;
+}
+/* UNPICKABLE DATES */
+.picker-d-dd {
+  color: #aaa;
+  background: #ddd;
+}
+.align{
+  
+  margin-left: 40%;
+  margin-top: 20%;
+}
+input{
+  padding:5px;
+  border:none;
+  border-bottom: 1px solid black;
+}
